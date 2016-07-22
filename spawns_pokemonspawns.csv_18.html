@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>45 Pokemon GO</title>
+            <link rel="shortcut icon" href="/static/favicon.ico">
+            <link rel="stylesheet" href="">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="static/jquery.js">\x3C/script>')</script>
+                    
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-o0ci3c_epSGcVUvFN1WYA-nmGLYcoCs" type="text/javascript"></script>
+
+
+        <style type="text/css">
+              #fullmap { height:100%;width:100%;top:0;left:0;position:absolute;z-index:200;margin-bottom: 20px; }
+        </style>
+        <script type="text/javascript">
+            function initialize_map() {
+                var map = new google.maps.Map(document.getElementById('fullmap'), {
+                    center: new google.maps.LatLng(39.10, -84.50),
+                    zoom: 14,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    scaleControl: true,
+                    streetViewControl: false,
+                    rotateControl: true,
+                    fullscreenControl: true
+                });
+
+                
+
+                
+                
+                    
+                    var marker_18_39_081954__84_492105 = new google.maps.Marker({	position: new google.maps.LatLng(39.081954,-84.492105),	
+map: map,	icon: "static/icons/18.png"
+});
+
+                    marker_18_39_081954__84_492105
+
+                    google.maps.event.addListener(
+                        marker_18_39_081954__84_492105,
+                        'click',
+                        getInfoCallback(map, "count: <br>11:35")
+                    );
+                
+                
+                
+                
+                
+                    
+                    var marker_18_39_101659__84_488499 = new google.maps.Marker({	position: new google.maps.LatLng(39.101659,-84.488499),	
+map: map,	icon: "static/icons/18.png"
+});
+
+                    marker_18_39_101659__84_488499
+
+                    google.maps.event.addListener(
+                        marker_18_39_101659__84_488499,
+                        'click',
+                        getInfoCallback(map, "count: <br>12:3")
+                    );
+                
+                
+                
+                    
+                    var marker_18_39_088037__84_519638 = new google.maps.Marker({	position: new google.maps.LatLng(39.088037,-84.519638),	
+map: map,	icon: "static/icons/18.png"
+});
+
+                    marker_18_39_088037__84_519638
+
+                    google.maps.event.addListener(
+                        marker_18_39_088037__84_519638,
+                        'click',
+                        getInfoCallback(map, "count: <br>19:11")
+                    );
+                
+                
+                
+                    
+                    var marker_18_39_104482__84_515706 = new google.maps.Marker({	position: new google.maps.LatLng(39.104482,-84.515706),	
+map: map,	icon: "static/icons/18.png"
+});
+
+                    marker_18_39_104482__84_515706
+
+                    google.maps.event.addListener(
+                        marker_18_39_104482__84_515706,
+                        'click',
+                        getInfoCallback(map, "count: <br>17:39<br>17:49")
+                    );
+                
+                
+                
+                    
+                    var marker_18_39_097442__84_505710 = new google.maps.Marker({	position: new google.maps.LatLng(39.097442,-84.505710),	
+map: map,	icon: "static/icons/18.png"
+});
+
+                    marker_18_39_097442__84_505710
+
+                    google.maps.event.addListener(
+                        marker_18_39_097442__84_505710,
+                        'click',
+                        getInfoCallback(map, "count: <br>10:46")
+                    );
+                
+                
+                
+                    
+                    var marker_18_39_092625__84_499891 = new google.maps.Marker({	position: new google.maps.LatLng(39.092625,-84.499891),	
+map: map,	icon: "static/icons/18.png"
+});
+
+                    marker_18_39_092625__84_499891
+
+                    google.maps.event.addListener(
+                        marker_18_39_092625__84_499891,
+                        'click',
+                        getInfoCallback(map, "count: <br>20:13")
+                    );
+                
+                
+                
+                    
+                    var marker_18_39_084739__84_482351 = new google.maps.Marker({	position: new google.maps.LatLng(39.084739,-84.482351),	
+map: map,	icon: "static/icons/18.png"
+});
+
+                    marker_18_39_084739__84_482351
+
+                    google.maps.event.addListener(
+                        marker_18_39_084739__84_482351,
+                        'click',
+                        getInfoCallback(map, "count: <br>19:59")
+                    );
+                
+                
+                
+                    
+                    var marker_18_39_094753__84_484810 = new google.maps.Marker({	position: new google.maps.LatLng(39.094753,-84.484810),	
+map: map,	icon: "static/icons/18.png"
+});
+
+                    marker_18_39_094753__84_484810
+
+                    google.maps.event.addListener(
+                        marker_18_39_094753__84_484810,
+                        'click',
+                        getInfoCallback(map, "count: <br>19:55")
+                    );
+                
+                
+            }
+
+            function getInfoCallback(map, content) {
+                var infowindow = new google.maps.InfoWindow({content: content});
+                return function() {
+                        infowindow.setContent(content);
+                        infowindow.open(map, this);
+                    };
+            }
+            google.maps.event.addDomListener(window, 'load', initialize_map);
+        </script>
+        <div id="fullmap" class="map"></div>
+</html>

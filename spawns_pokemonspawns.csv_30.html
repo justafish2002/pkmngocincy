@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>45 Pokemon GO</title>
+            <link rel="shortcut icon" href="/static/favicon.ico">
+            <link rel="stylesheet" href="">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="static/jquery.js">\x3C/script>')</script>
+                    
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-o0ci3c_epSGcVUvFN1WYA-nmGLYcoCs" type="text/javascript"></script>
+
+
+        <style type="text/css">
+              #fullmap { height:100%;width:100%;top:0;left:0;position:absolute;z-index:200;margin-bottom: 20px; }
+        </style>
+        <script type="text/javascript">
+            function initialize_map() {
+                var map = new google.maps.Map(document.getElementById('fullmap'), {
+                    center: new google.maps.LatLng(39.10, -84.50),
+                    zoom: 14,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    scaleControl: true,
+                    streetViewControl: false,
+                    rotateControl: true,
+                    fullscreenControl: true
+                });
+
+                
+
+                
+                
+                    
+                    var marker_30_39_104320__84_515706 = new google.maps.Marker({	position: new google.maps.LatLng(39.104320,-84.515706),	
+map: map,	icon: "static/icons/30.png"
+});
+
+                    marker_30_39_104320__84_515706
+
+                    google.maps.event.addListener(
+                        marker_30_39_104320__84_515706,
+                        'click',
+                        getInfoCallback(map, "count: <br>10:47")
+                    );
+                
+                
+                
+                    
+                    var marker_30_39_120158__84_492105 = new google.maps.Marker({	position: new google.maps.LatLng(39.120158,-84.492105),	
+map: map,	icon: "static/icons/30.png"
+});
+
+                    marker_30_39_120158__84_492105
+
+                    google.maps.event.addListener(
+                        marker_30_39_120158__84_492105,
+                        'click',
+                        getInfoCallback(map, "count: <br>20:0")
+                    );
+                
+                
+                
+                    
+                    var marker_30_39_110396__84_513821 = new google.maps.Marker({	position: new google.maps.LatLng(39.110396,-84.513821),	
+map: map,	icon: "static/icons/30.png"
+});
+
+                    marker_30_39_110396__84_513821
+
+                    google.maps.event.addListener(
+                        marker_30_39_110396__84_513821,
+                        'click',
+                        getInfoCallback(map, "count: <br>18:10")
+                    );
+                
+                
+                
+                    
+                    var marker_30_39_112509__84_501858 = new google.maps.Marker({	position: new google.maps.LatLng(39.112509,-84.501858),	
+map: map,	icon: "static/icons/30.png"
+});
+
+                    marker_30_39_112509__84_501858
+
+                    google.maps.event.addListener(
+                        marker_30_39_112509__84_501858,
+                        'click',
+                        getInfoCallback(map, "count: <br>18:46")
+                    );
+                
+                
+                
+                    
+                    var marker_30_39_096135__84_515870 = new google.maps.Marker({	position: new google.maps.LatLng(39.096135,-84.515870),	
+map: map,	icon: "static/icons/30.png"
+});
+
+                    marker_30_39_096135__84_515870
+
+                    google.maps.event.addListener(
+                        marker_30_39_096135__84_515870,
+                        'click',
+                        getInfoCallback(map, "count: <br>10:52")
+                    );
+                
+                
+                
+                
+                
+                    
+                    var marker_30_39_108921__84_494564 = new google.maps.Marker({	position: new google.maps.LatLng(39.108921,-84.494564),	
+map: map,	icon: "static/icons/30.png"
+});
+
+                    marker_30_39_108921__84_494564
+
+                    google.maps.event.addListener(
+                        marker_30_39_108921__84_494564,
+                        'click',
+                        getInfoCallback(map, "count: <br>13:47")
+                    );
+                
+                
+                
+                    
+                    var marker_30_39_113026__84_504235 = new google.maps.Marker({	position: new google.maps.LatLng(39.113026,-84.504235),	
+map: map,	icon: "static/icons/30.png"
+});
+
+                    marker_30_39_113026__84_504235
+
+                    google.maps.event.addListener(
+                        marker_30_39_113026__84_504235,
+                        'click',
+                        getInfoCallback(map, "count: <br>10:28")
+                    );
+                
+                
+            }
+
+            function getInfoCallback(map, content) {
+                var infowindow = new google.maps.InfoWindow({content: content});
+                return function() {
+                        infowindow.setContent(content);
+                        infowindow.open(map, this);
+                    };
+            }
+            google.maps.event.addDomListener(window, 'load', initialize_map);
+        </script>
+        <div id="fullmap" class="map"></div>
+</html>
